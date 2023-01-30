@@ -1,2 +1,7 @@
-package com.matheusmarkies.numericalmethods;public class Approaches {
+package com.matheusmarkies.numericalmethods;
+
+public class Approaches {
+
+
+
 }
