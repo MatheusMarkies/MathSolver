@@ -11,6 +11,7 @@ package com.matheusmarkies.input;
  */
 public class Primitive {
     String primitive;
+    double value;
 
     public Primitive() {
     }
@@ -19,11 +20,24 @@ public class Primitive {
         this.primitive = primitive;
     }
 
+    public Primitive(String primitive, double value) {
+        this.primitive = primitive;
+        this.value = value;
+    }
+
     public String getPrimitive() {
         return primitive;
     }
 
     public void setPrimitive(String primitive) {
         this.primitive = primitive;
+    }
+
+    public double getValue() {
+        return value;
+    }
+
+    public void setValue(double value) {
+        this.value = value;
     }
 }

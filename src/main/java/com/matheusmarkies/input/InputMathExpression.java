@@ -23,6 +23,7 @@ public class InputMathExpression {
     static char[] mathSymbols = {'+', '-', '*', '/', '='};
 
     public static String addMultiplySymbol(String eq) {
+
         String newEq = "";
         String equation = eq.replace(" ", "");
 
@@ -109,7 +110,8 @@ public class InputMathExpression {
         return newEq;
     }
 
-    public static void getEq(String eq) {
+    public static ArrayList<Component> getEq(String eq) {
+        ArrayList<Component> returnComponents = new ArrayList<>();
         /*
         y = 2+x
         0 = 2+x
@@ -194,8 +196,15 @@ public class InputMathExpression {
                     String tm = components.get(i).replace("SEPARATOR", "component[" + (i - 1) + "]");
                     System.out.println(tm);
                 }
+                returnComponents.add(new Component(components.get(i),i));
             }
 
         }
+        return returnComponents;
     }
+
+    public static void solve(ArrayList<>){
+
+    }
+
 }
